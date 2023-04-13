@@ -3,7 +3,6 @@ package com.company.springboot.learnjpahibernate.course.springjdbc;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
 @Repository
@@ -12,7 +11,6 @@ public class CourseJdbcRepository {
 	@Autowired
 	private	JdbcTemplate jdbcTemplate;
 	
-	//INSERT INTO COURSE(ID,NAME,AUTHOR) VALUES(1001,'AZUR','MICROSOFT');
 	private static String INSERT_QUERY =
 			"""
 			INSERT INTO COURSE(ID,NAME,AUTHOR) VALUES(?,?,?);
