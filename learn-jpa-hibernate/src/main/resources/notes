@@ -1,0 +1,16 @@
+INSERT INTO 
+COURSE(ID,NAME,AUTHOR)
+VALUES(1001,'AZUR','MICROSOFT');
+
+INSERT INTO 
+COURSE(ID,NAME,AUTHOR)
+VALUES(1001,'AWS','AMAZON');
+
+create table Course
+(
+	id bigint not null,
+	name varchar(255)not null,
+	author varchar(255) not null,
+	primary key (id)
+	
+);
